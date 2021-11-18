@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 # LANGUAGE_CODE = 'en-gb'
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = env.str('LANGUAGE_CODE')
 LANGUAGES = (
 	('ru', _('Russian')),
 	('en', _('English')),
