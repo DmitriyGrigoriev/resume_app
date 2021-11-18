@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 14:05+0000\n"
+"POT-Creation-Date: 2021-11-18 11:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1402,7 +1402,7 @@ msgstr ""
 #: env/lib/python3.8/site-packages/grappelli/templates/smuggler/load_data_form.html:24
 #: main/templates/main/partials/nav.html:24
 msgid "Home"
-msgstr ""
+msgstr "На главную"
 
 #: env/lib/python3.8/site-packages/grappelli/dashboard/templates/grappelli/dashboard/modules/app_list.html:19
 #: env/lib/python3.8/site-packages/grappelli/dashboard/templates/grappelli/dashboard/modules/model_list.html:9
@@ -1607,7 +1607,7 @@ msgstr ""
 #: env/lib/python3.8/site-packages/grappelli/templates/admin/constance/includes/results_list.html:8
 #: main/templates/main/contact.html:54
 msgid "Name"
-msgstr "Ваше Имя"
+msgstr "Ваше имя"
 
 #: env/lib/python3.8/site-packages/grappelli/templates/admin/constance/includes/results_list.html:13
 msgid "Default"
@@ -2153,6 +2153,10 @@ msgstr "Отправить"
 msgid "Hi, I’m"
 msgstr "Привет, меня зовут"
 
+#: main/templates/main/index.html:46
+msgid "a"
+msgstr " "
+
 #: main/templates/main/index.html:51
 msgid "Download Resume"
 msgstr "Скачать резюме"
@@ -2187,7 +2191,7 @@ msgstr "Рекомендации"
 
 #: main/templates/main/index.html:235
 msgid "Recent posts"
-msgstr "Последнии посты"
+msgstr "Последнии посты моего блога"
 
 #: main/templates/main/partials/nav.html:18
 msgid "Toggle Menu"
@@ -2205,10 +2209,10 @@ msgstr "Блог"
 msgid "See my recent projects below"
 msgstr "Мои последние проекты"
 
-#: resume_app/settings.py:122
+#: resume_app/settings.py:119
 msgid "Russian"
 msgstr "Русский"
 
-#: resume_app/settings.py:123
+#: resume_app/settings.py:120
 msgid "English"
 msgstr "Английский"
