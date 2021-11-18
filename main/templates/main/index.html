@@ -1,5 +1,6 @@
 {% extends 'main/base.html' %}
 {% load static %}
+{% load i18n %}
 
 <!-- ================================
 Start SEO blocks
@@ -42,15 +43,15 @@ Start Content
         </div>
         <div class="col-md">
           <div class="bannerContent">
-            <h1 class="xlTitle pb-3">Hi, I’m {{me.first_name|title}}, <br> a {{me.userprofile.title}} </br></h1>
+            <h1 class="xlTitle pb-3">{% trans "Hi, I’m" %} {{me.first_name|title}}, <br> {% trans "a" %} {{me.userprofile.title}} </br></h1>
             <p>{{me.userprofile.bio}}</p>
             <div class="bannerBtnCol">
               <div class="row">
                 <div class="col-auto">
-                  <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">Download Resume</a>
+                  <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">{% trans "Download Resume" %}</a>
                 </div>
                 <div class="col-auto">
-                  <a href="{% url 'main:contact' %}" class="btn btnOutline">Contact</a>
+                  <a href="{% url 'main:contact' %}" class="btn btnOutline">{% trans "Contact" %}</a>
                 </div>
               </div>
             </div>
@@ -67,7 +68,7 @@ Start Content
       <div class="row">
         <div class="col-md-auto">
           <div class="keySkillCol">
-            <h4 class="smTitle pb-3">Key Skills</h4>
+            <h4 class="smTitle pb-3">{% trans "Key Skills" %}</h4>
             {% for sk in me.userprofile.skills.all %}
             {% if sk.is_key_skill %}
             <div class="keySkillCard">
@@ -83,7 +84,7 @@ Start Content
           </div>
         </div>
         <div class="col-md">
-          <h4 class="smTitle pb-3">Coding Skills</h4>
+          <h4 class="smTitle pb-3">{% trans "Coding Skills" %}</h4>
           <div class="progressCol">
             <div class="progressCard">
               {% for sk in me.userprofile.skills.all %}
@@ -117,7 +118,7 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">Certificates</h4>
+          <h4 class="smText regular">{% trans "Certificates" %}</h4>
         </div>
 
       </div>
@@ -157,10 +158,10 @@ Start Content
       <div class="portfolioCol">
         <div class="row pb-3">
           <div class="col">
-            <h4 class="smText regular">Featured Work</h4>
+            <h4 class="smText regular">{% trans "Featured Work" %}</h4>
           </div>
           <div class="col-auto">
-            <a href="{% url 'main:portfolios' %}" class="simpleLink">View all</a>
+            <a href="{% url 'main:portfolios' %}" class="simpleLink">{% trans "View all" %}</a>
           </div>
         </div>
         {% for p in portfolio %}
@@ -188,7 +189,7 @@ Start Content
         
       </div>
       <div class="testimonialCol">
-        <h4 class="smText regular d-block">Testimonials</h4>
+        <h4 class="smText regular d-block">{% trans "Testimonials" %}</h4>
         <div class="testimonialSlider">
           <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper">
@@ -231,10 +232,10 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">Recent posts</h4>
+          <h4 class="smText regular">{% trans "Recent posts" %}</h4>
         </div>
         <div class="col-auto">
-          <a href="{% url 'main:blogs' %}" class="simpleLink">View all</a>
+          <a href="{% url 'main:blogs' %}" class="simpleLink">{% trans "View all" %}</a>
         </div>
       </div>
       <div class="row g-3">
